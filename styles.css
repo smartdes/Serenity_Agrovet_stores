@@ -429,4 +429,34 @@ ul {
     .grid-3 {
         grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     }
+
+    /* Mobile refinements for "About Us" and spacing */
+    .section {
+        padding: 50px 0;
+    }
+
+    .section-title {
+        font-size: 1.75rem;
+        margin-bottom: 30px;
+    }
+
+    .split-layout {
+        gap: 30px;
+    }
+
+    .about-image-container {
+        height: 250px;
+        /* Reduced height for mobile */
+    }
+
+    .contact-details {
+        gap: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .detail-item {
+        width: 100%;
+        max-width: 350px;
+    }
 }
