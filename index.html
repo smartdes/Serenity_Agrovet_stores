@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProFarm Agrovet - Total Health for Your Livestock</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <img src="assets/Serenity_Logo.svg" alt="Serenity Agrovet Logo" class="logo-icon">
+                <span class="logo-text">Serenity<span class="accent-green">Agrovet</span></span>
+            </a>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact" class="btn-contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <h1>Total Health for Your Livestock & Farm</h1>
+            <p class="sub-headline">Premium veterinary products, expert advice, and reliable solutions for modern
+                farming success.</p>
+            <div class="hero-buttons">
+                <a href="#products" class="btn btn-primary">Shop Products</a>
+                <a href="#contact" class="btn btn-secondary">Get Advice</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Featured Categories -->
+    <section id="products" class="section">
+        <div class="container">
+            <h2 class="section-title">Our Solutions</h2>
+            <div class="grid-3">
+                <div class="card">
+                    <div class="card-icon">💊</div>
+                    <h3>Animal Health</h3>
+                    <p>Vaccines, antibiotics, and supplements to keep your herd healthy and productive.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🌱</div>
+                    <h3>Crop Protection</h3>
+                    <p>Effective pesticides, herbicides, and fertilizers for maximum yield.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🛠️</div>
+                    <h3>Farm Equipment</h3>
+                    <p>Durable tools and equipment for daily farm operations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section bg-light">
+        <div class="container">
+            <div class="split-layout">
+                <div class="text-content">
+                    <h2 class="section-title">Why Choose our Agrovet Stores</h2>
+                    <p>At Serenity Agrovet, we understand that farming is more than just a business—it's a way of life.
+                        We are dedicated to providing high-quality inputs and expert veterinary advice to help your farm
+                        thrive.</p>
+                    <ul class="check-list">
+                        <li>Verified Quality Products</li>
+                        <li>Qualified Veterinary Staff</li>
+                        <li>Affordable Prices</li>
+                        <li>Community Training Programs</li>
+                    </ul>
+                </div>
+                <div class="image-content">
+                    <!-- Placeholder for an 'About Us' image -->
+                    <div class="about- Serenity Agrovet Stores">
+                        <span>Trusted by Local Farmers</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <div class="contact-box">
+                <h2>Visit Us Today</h2>
+                <p>We are open Monday - Saturday, 8:00 AM to 6:00 PM.</p>
+                <div class="contact-details">
+                    <div class="detail-item">
+                        <strong>Location:</strong> Main Street, Juja Farm
+                    </div>
+                    <div class="detail-item">
+                        <strong>Phone:</strong> +254 700 000 000
+                    </div>
+                    <div class="detail-item">
+                        <strong>Email:</strong> info@serenityagrovet.com
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Serenity Agrovet Stores. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const navLinks = document.querySelector(".nav-links");
+
+        hamburger.addEventListener("click", () => {
+            hamburger.classList.toggle("active");
+            navLinks.classList.toggle("active");
+        });
+
+        document.querySelectorAll(".nav-links li a").forEach(n => n.addEventListener("click", () => {
+            hamburger.classList.remove("active");
+            navLinks.classList.remove("active");
+        }));
+    </script>
+</body>
+
+</html>
