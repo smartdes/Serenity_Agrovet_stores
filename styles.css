@@ -306,17 +306,22 @@ ul {
     font-weight: bold;
 }
 
-.about-image-placeholder {
+.about-image-container {
     width: 100%;
     height: 400px;
-    background-color: #ddd;
-    /* Fallback for image */
+    /* Fixed height for consistency */
     border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #888;
-    font-weight: bold;
+    overflow: hidden;
+    /* Ensures image respects border radius */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.about-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Ensures image covers the area without distortion */
+    display: block;
 }
 
 /* Contact Section */
