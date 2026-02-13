@@ -152,14 +152,15 @@ ul {
     color: var(--white);
 }
 
-/* Gradient Overlay for text readability */
+/* Green Overlay for text readability */
 .hero-overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5));
+    background: rgba(46, 125, 50, 0.35);
+    /* Green overlay with 35% opacity */
 }
 
 .hero-content {
@@ -237,7 +238,7 @@ ul {
     text-align: center;
     font-size: 2.25rem;
     margin-bottom: 50px;
-    color: var(--text-dark);
+    color: var(--primary-purple);
     position: relative;
 }
 
@@ -280,7 +281,7 @@ ul {
 
 .card h3 {
     margin-bottom: 15px;
-    color: var(--text-dark);
+    color: var(--primary-green);
 }
 
 .card p {
@@ -405,6 +406,10 @@ ul {
     justify-content: space-between;
 }
 
+.mobile-categories {
+    display: none;
+}
+
 .search-wrap {
     flex: 1;
     max-width: 600px;
@@ -488,6 +493,23 @@ ul {
 
     .shop-nav-content.active {
         left: 0;
+    }
+
+    .mobile-categories {
+        display: block;
+        width: 100%;
+        padding-top: 20px;
+        border-top: 1px solid #eee;
+    }
+
+    .mobile-categories h3 {
+        font-size: 1.1rem;
+        margin-bottom: 15px;
+        color: var(--text-dark);
+    }
+
+    .shop-sidebar {
+        display: none;
     }
 
     .search-wrap {
@@ -650,12 +672,19 @@ ul {
 @media (max-width: 768px) {
     .nav-container {
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: center;
         padding: 0 10px;
+        position: relative;
+    }
+
+    .logo {
+        margin: 0 auto;
     }
 
     .hamburger {
         display: block;
+        position: absolute;
+        right: 10px;
     }
 
     .hamburger.active .bar:nth-child(2) {
