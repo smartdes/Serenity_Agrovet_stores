@@ -288,6 +288,10 @@ ul {
     color: var(--text-light);
 }
 
+
+
+
+
 /* Split Layout for About */
 .split-layout {
     display: grid;
@@ -774,4 +778,6 @@ ul {
         width: 100%;
         max-width: 350px;
     }
+
+
 }
